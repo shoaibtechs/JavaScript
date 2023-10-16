@@ -85,3 +85,57 @@ for( const key in programing)
 
 
 //COnclusion for 'objects' we will use the 'for in' loop and for the arrays we will use 'for of' loop.
+
+
+//----------------------------------For Each loop-------------------------------------------
+
+const coding =  ["js", "ruby", "java", "python", "cpp"]
+
+coding.forEach( function (val) {
+
+    console.log(val);
+
+} )
+
+// Also with foreach loop we can use the arrow function 
+
+
+coding.forEach((item) => {
+
+    console.log(item);
+
+
+}
+
+
+)
+
+// This loop also tells us the index and full array :)
+coding.forEach( (item, index, arr) => {
+
+        console.log(item,index,arr);
+
+} )
+
+
+
+
+
+//---- Getting the values from "Array with object "....
+
+const myCoding = [
+
+    {
+    languagename:"Java",
+    langhagefilename:"1.js"
+    }
+
+
+]
+
+myCoding.forEach(  (item)=> {
+
+    console.log(item.languagename);
+
+} )
+
